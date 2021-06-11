@@ -8,6 +8,7 @@ export default function Home(props) {
             <Particle />
             <div className="top-container flex">
                 <h1>Hi! I'm Jack Doherty</h1>
+                <h3>Site under construction!</h3>
             </div>
         </Container>
     )
