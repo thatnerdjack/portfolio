@@ -6,6 +6,8 @@ import {
     AiOutlineHome
 } from "react-icons/ai";
 
+import { MdWork } from "react-icons/md"
+
 export default function NavBar() {
     const [expand, updateExpanded] = useState(false);
 
@@ -46,6 +48,16 @@ export default function NavBar() {
                                 onClick={() => updateExpanded(false)}
                             >
                                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/resume"
+                                onClick={() => updateExpanded(false)}
+                            >
+                                <MdWork style={{ marginBottom: "2px" }} /> Resume
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>

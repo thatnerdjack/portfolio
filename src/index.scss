@@ -160,4 +160,25 @@
     align-items: center;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+::selection {
+    background-color: lightcyan;
+    color: slategray;
+}
+
+:focus {
+    outline: 2px dashed greenyellow;
+    outline-offset: 3px;
+}
+
+.picture-frame {
+    max-width: 300px;
+    border-radius: 10%;
+}
+
 @import "~bootstrap/scss/bootstrap.scss";
